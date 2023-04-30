@@ -1,0 +1,41 @@
+div{
+    background-color: white;
+    float: right;
+    border-radius: 5px;
+    width: 800px;
+    box-sizing: 10px;
+    
+}
+body{
+background-color:white;
+background-image: url(fond.img);
+}
+form{
+    background-color: beige;
+    border-top-right-radius: 100px;
+    float: left;
+    width: 300px;
+}
+ul{
+    background-color: rgb(109, 197, 8);
+    text-align: center;
+    border-style: double;
+    box-shadow: 30PX;
+    border-radius: 10PX;
+}
+div1{
+    text-size-adjust: 10;
+}
+img{
+    width: 800px;
+    float: right;
+    border-radius: 40px;
+    height: 400px;
+}
+
+div5{
+    float: left;
+    background-color: bisque;
+    border-top-right-radius: 20px;
+    border-top-left-radius:20px ;
+}
