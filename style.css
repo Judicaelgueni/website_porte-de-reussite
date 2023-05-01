@@ -1,106 +1,76 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-
-
-ul1 {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    float: right;
-    padding-top: 10;
-}
-
-li {
-    float: left;
-}
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-li a:hover:not(.active) {
-    background-color: #111;
-}
-
-.active {
-    background-color: #4CAF50;
-}
-
-div{
-    float:inline-start;
-    text-align: right;
-    text-decoration-line: underline;
-    
-    list-style-type: none;;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: white;
-    
-}
-
-
-
-li a {
-    float: left;
-}
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-li a:hover:not(.active) {
-    background-color: #111;
-}
-
-div{
-    background-color: white;
-    float: right;
-    border-radius: 5px;
-    width: 800px;
-    box-sizing: 10px;
-    
-}
 body{
-background-color:white;
-background-image: url(fond.img);
+    font-family: Verdana;
+}*{
+    margin: 0;
+    padding: 0;
 }
-form{
-    background-color: beige;
-    border-top-right-radius: 100px;
-    float: left;
-    width: 300px;
+footer{
+    position: fixed;
+    background-color:black;
+    width: 100%;
+    color: white;
 }
-ul{
-    background-color: rgb(109, 197, 8);
-    text-align: center;
-    border-style: double;
-    box-shadow: 30PX;
-    border-radius: 10PX;
+header{
+    position: fixed;
+    background-color: #000;
+    width: 100%;
+    color: white;
 }
-div1{
-    text-size-adjust: 10;
+
+header h2{
+    position: absolute;
+    margin-top: 20px;
+    left: 20%;
+    color: orange;
+}
+header{
+    height: 10vh;
+
+}
+footer{
+    height: 15vh;
+    bottom: 0;
+
+}
+footer h2{
+    position: absolute;
+    left: 45%;
+}
+
+.nav{
+    position: absolute;
+    width: 100%;
+
+}
+.nav a{
+position: relative;
+left: 45%;
+top: 20px;
+color: white;
+text-decoration: none;
+margin-right: 20px;
+
+}
+footer p{
+    position:absolute ;
+    left:48% ;
+    bottom: 15px;
+    color: orange;
 }
 img{
-    width: 800px;
-    float: right;
-    border-radius: 40px;
+    width:100%;  
     height: 400px;
-}
+    margin-top: 60px;
+    }
+    p{
+        width: 50%;
+        float: right;
+    }
 
-div5{
-    float: left;
-    background-color: bisque;
-    border-top-right-radius: 20px;
-    border-top-left-radius:20px ;
-}
+
+
+
+
+
+
 
