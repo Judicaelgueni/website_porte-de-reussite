@@ -4,12 +4,8 @@ body{
     margin: 0;
     padding: 0;
 }
-footer{
-    position: fixed;
-    background-color:black;
-    width: 100%;
-    color: white;
-}
+
+
 header{
     position: fixed;
     background-color: #000;
@@ -95,9 +91,17 @@ border-radius: 5px;
 box-sizing: 50px;
 
     }
+    footer{
+        position: absolute;
+        background-color:black;
+        width: 100%;
+        color: white;
+        bottom: 0;
+        margin: -100px auto 0;
+    
+    
+    }
 
-
-
-
-
-
+    footer_parent{
+        position: relative;
+    }
