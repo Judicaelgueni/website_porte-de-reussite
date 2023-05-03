@@ -77,6 +77,22 @@ footer p{
     color: rgb(5, 5, 5);
     width: 50%;
     height: 100px;
+    text-decoration: none;
+    }
+     .button a{
+        text-decoration: none;
+        color:black;
+        background-color:green;
+        border-radius: 5px;
+        box-shadow: 50px;
+        left: 30%;
+        top: 50px;
+        position: relative;
+        margin-right: 40px;
+        width: 150px;
+        background-size: 60px;
+        
+        
     }
     .nav h3{
         position: absolute;
@@ -92,7 +108,7 @@ box-sizing: 50px;
 
     }
     footer{
-        position: absolute;
+        position: fixed;
         background-color:black;
         width: 100%;
         color: white;
