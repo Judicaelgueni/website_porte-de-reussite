@@ -28,7 +28,7 @@ footer{
     bottom: 0;
 
 }
-footer h2{
+.pied h2{
     position: absolute;
     left: 45%;
 }
@@ -47,10 +47,10 @@ text-decoration: none;
 margin-right: 20px;
 
 }
-footer p{
+.pied p{
     position:absolute ;
-    left:48% ;
-    bottom: 15px;
+    left:30% ;
+    bottom: 0px;
     color: orange;
 }
 
@@ -113,7 +113,7 @@ box-sizing: 50px;
         width: 100%;
         color: white;
         bottom: 0;
-        margin: -100px auto 0;
+       left: 0;
      }
 
     footer_parent{
@@ -164,4 +164,7 @@ box-sizing: 50px;
       }
       .menu > li:hover .sub-menu {
         transform: scale(1);
+      }
+      video{
+        right: 0;
       }
