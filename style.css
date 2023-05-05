@@ -8,9 +8,10 @@ body{
 
 header{
     position: fixed;
-    background-color:black;
+    background-color:white;
     width: 100%;
     color: white;
+    box-shadow: 10px;
 }
 
 header h2{
@@ -42,9 +43,14 @@ footer{
 position: relative;
 left: 50%;
 top: 20px;
-color: white;
+color:black;
 text-decoration: none;
 margin-right: 20px;
+background-color: white;
+border-radius: 5px;
+box-shadow: 0 0 5px 0;
+border: solid;
+width: 100px;
 
 }
 .pied p{
@@ -85,14 +91,16 @@ margin-right: 20px;
       background-color:green;
       border-radius: 5px;
       box-shadow: 50px;
-      left: 30%;
-      top: 50px;
+      
+      top: 10px;
       position: relative;
       margin-right: 40px;
       width: 200px;
       background-size: 60px;
       border:solid;
       border-width: 30;
+      font-size: 20px;
+      margin-left: 30px;
         
         
     }
@@ -137,13 +145,14 @@ box-sizing: 50px;
         font-size: 15px;
         margin-right: 60%;
         position: absolute;
-        margin-top: 5px;
+        margin-top: 0px;
         left: 35%;
         background-color: blue;
         list-style-type: none;
         border-radius: 10px;
         text-align: center;
       border: solid  ;
+      padding-bottom: 10px;
         
      }
       .sub-menu {
