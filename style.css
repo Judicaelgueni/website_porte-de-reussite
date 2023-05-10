@@ -10,18 +10,18 @@ header{
     position: fixed;
     background-color:white;
     width: 100%;
-    color: white;
-    box-shadow: 10px;
+    color:white;
+    box-shadow: 10px 10px 50px 10px;
 }
 
 header >img{
     position: absolute;
-    margin-top: 20px;
+    margin-top: 0px;
     left: 0%;
     color: orange;
     width: 250px;
-    height: 93px;
-    top: 0;
+    height: 110px;
+    top: 0px;
 }
 header{
     height: 20vh;
@@ -52,7 +52,8 @@ margin-right: 20px;
 background-color: white;
 border-radius: 5px;
 box-shadow: 0 0 5px 0;
-border: solid;
+
+
 width: 100px;
 
 }
@@ -71,8 +72,8 @@ width: 100px;
     img{
         width:100%;  
         height: 600px;
-        margin-top: 110px;
-        opacity: ;
+        margin-top: 150px;
+        opacity:20px ;
         }
         
     .container .text{
