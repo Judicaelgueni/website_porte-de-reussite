@@ -1,0 +1,96 @@
+@import url();
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+::selection{
+    color: black;
+    background: white;
+}
+nav{
+    position: fixed;
+    background: black;
+    width: 100%;
+    padding: 10px 0;
+}
+nav .menu{
+    max-width: 1250px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 12px;
+}
+ .menu .logo a{
+    text-decoration: none;
+    color: white;
+    font-size: 2em;
+    font-weight: 700;
+ }
+.menu ul{
+    display: inline-flex;
+}
+.menu ul li{
+    list-style: none;
+    margin: 0;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+.menu ul li a:hover{
+    background: white;
+    color: black;
+}
+.img{
+    background: url(glo2.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    position: relative;
+}
+.img::before{
+    content: "";
+    position: absolute;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+.content{
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    padding: 0 20px;
+    text-align: center;
+
+}
+.content title{
+    color: white;
+    font-size: 50px;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
