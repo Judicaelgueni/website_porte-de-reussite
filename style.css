@@ -25,7 +25,7 @@ nav .menu{
 }
  .menu .logo a{
     text-decoration: none;
-    color: white;
+    color: orange;
     font-size: 2em;
     font-weight: 700;
  }
@@ -65,7 +65,7 @@ nav .menu{
     width: 100%;
     background: rgba(0, 0, 0, 0.5);
 }
-.content{
+.center{
     position: absolute;
     top: 52%;
     left: 50%;
@@ -75,7 +75,7 @@ nav .menu{
     text-align: center;
 
 }
-.content title{
+.center title{
     color: white;
     font-size: 50px;
     font-weight: 500;
