@@ -1,96 +1,150 @@
-@import url();
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'poppins',sans-serif;
-}
-::selection{
-    color: black;
-    background: white;
-}
-nav{
-    position: fixed;
-    background: black;
-    width: 100%;
-    padding: 10px 0;
-}
-nav .menu{
-    max-width: 1250px;
-    margin: auto;
-    display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    padding: 0 12px;
-}
- .menu .logo a{
-    text-decoration: none;
-    color: greenyellow;
-    font-size: 2em;
-    font-weight: 700;
- }
-.menu ul{
-    display: inline-flex;
-}
-.menu ul li{
-    list-style: none;
-    margin: 0;
-}
-.menu ul li a{
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-    padding: 7px 13px;
-    border-radius: 3px;
-    font-weight: 500;
-    transition: all 0.3s ease;
-}
-.menu ul li a:hover{
-    background: white;
-    color: black;
-}
-.img{
-    background: url(glo2.jpg);
-    background-size: cover;
-    height: 100vh;
-    width: 100%;
-    background-position: center;
-    position: relative;
-}
-.img::before{
-    content: "";
-    position: absolute;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.5);
-}
-.center{
-    position: absolute;
-    top: 52%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    width: 100%;
-    padding: 0 20px;
-    text-align: center;
-
-}
-.center title{
-    color: white;
-    font-size: 50px;
-    font-weight: 500;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
+    }
+    .box{
+        border: solid black 6px;
+        height: 400px;
+        width: 200px;
+        text-align: center;
+        border-radius: 20px;
+        box-shadow: 20px;
+        cursor: pointer;  
+        margin-top: 100px;
+    }
+    @keyframes judi{
+        0%{ transform: scale(1.5);}
+        
+    }
+    @keyframes jano{
+         0%{ transform:translatex(1.8em) ;}
+    }
+    header{
+        background-color:red;
+        width: 100%;
+        margin: auto;
+        padding: 10px 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        box-shadow: 0 0px 0 1px;
+    }
+    header .nav{
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 13px;
+        
+    
+    }
+    .nav .logo a{
+        text-decoration: none;
+        color: white;
+        font-size: 35px;
+        font-weight: 2em;
+        
+    }
+    .nav ul {
+        display: inline-flex;  
+    }
+    .nav ul li{
+        list-style: none;
+        padding: 15px;
+    }
+    .nav ul li a{
+        text-decoration: none;
+        color: white;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 25px;
+    }
+    .nav ul li a:hover{
+        background-color: white;
+        color: black;
+        border-radius: 5px;
+        height: 30px;
+    }
+     .center img{
+        background: url(fn.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 500px;
+        width: 100%;
+        position: relative;
+    
+    }
+    .center img ::before{
+        content: "";
+        background-color: rgba(0, 0, 0, 0.5);
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        
+    }
+    .center{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        color: white;
+        font-size: 35px;
+        font-weight: 2em;
+    }
+    .nav .title{
+        font-size: 35px;
+        font-weight: 2em;
+        text-align: center;
+        color: white;
+    }
+    .layout {
+        display: flex;
+        gap: 16px;
+      }
+      .layout img{
+        width: 300px;
+        height: 300px;
+        margin-top: 20px;
+        cursor: pointer;
+        background-color: white;
+        box-shadow: 5px 10px 10px 0;
+        border-radius: 20px;
+      }
+      section{
+        margin-top: 150px;
+        text-align: center;
+      }
+      .layout .box{
+        width: 300px;
+        height: 470px;
+        border-color: orange;
+        margin-top: 20px;
+      }
+      body{
+        background: url(ju.jpg);
+        background-size: cover;
+      }
+      .layout .box h2{
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 40px;
+        font-size: 30px;
+    
+      }
+      .layout .box button{
+        width: 150px;
+        height: 50px;
+        border-radius: 10px;
+        background-color: orange;
+        color: white;
+        font-size: 20px;
+        font-weight: 2em;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        border: none;
+        cursor: pointer;
+        
+        animation: judi 1.7s infinite alternate-reverse;
+      }
+    
+        
+    
