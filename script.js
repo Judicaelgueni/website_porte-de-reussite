@@ -1,5 +1,5 @@
 
 function myonclickFn(){
-    document.location.href="index copy1.html"};//* fonction de cliquefunction myonclickFn(){
+    document.location.href="index2.html"};//* fonction de cliquefunction myonclickFn(){
       
 
