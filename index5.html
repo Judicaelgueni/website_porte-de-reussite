@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nom de votre site</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <style>
+    /* Styles CSS */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+    *{
+      box-sizing: border-box;
+    }
+    
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      justify-content: space-between;
+    
+    }
+    nav{
+      justify-content: space-between;
+      display: flex;
+      top: 0;
+    }
+    
+    h1 {
+      margin: 0;
+      font-size: 70px;
+      color: blue;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-style: oblique;
+      cursor: pointer;
+      
+    }
+    
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    nav li {
+      margin-right: 10px;
+      display: inline-block;
+    }
+    
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 15px;
+      font-size: 40px;
+    }
+    nav a:hover{
+      border-left: solid white;
+      border-right: solid white;
+      opacity: 75%;
+    }
+    .container{
+       width: 100%;
+       margin: 0 auto;
+       position: relative;
+       cursor: pointer;
+    }
+    .container img{
+       width: 100%;
+       height: 1000px;
+       opacity: 0.4;
+       left: 0;
+    }
+    header .container span{
+       position: absolute;
+       top: 30%;
+       left: 50%;
+       transform: translate(-50%,-50%);
+       color: #fff;
+       font-size: 70px;
+       font-weight: 600;
+       letter-spacing: 2px;
+       color: orange;
+       text-align: center;
+
+    }
+    header .container p{
+      position: absolute;
+       top: 46%;
+       left: 50%;
+       transform: translate(-50%,-50%);
+       color: #fff;
+       font-size: 50px;
+       font-weight: 600;
+       text-align: center;
+       font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+       font-style: italic;
+
+
+    }
+    .container .btn1{
+      position: absolute;
+      top: 65%;
+      left: 35%;
+      background-color: greenyellow;
+      color: black;
+      font-size: 50px;
+      width: 350px;
+      height: 150px;
+      border-radius: 10px;
+      box-shadow: 0 5px 5px 1px black;
+      border: solid 5px;
+      
+    }
+    .container .btn2{
+      position: absolute;
+      top: 65%;
+      left: 50%;
+      background-color: orange;
+      color: white;
+      font-size: 50px;
+      width: 600px;
+      height: 150px;
+      border-radius: 10px;
+      box-shadow: 0 5px 5px 1px black;
+      border:solid greenyellow 5px;
+      
+    }
+    .container .matière{
+      position: absolute;
+      top: 3%;
+      left: 80%;
+      color: white;
+      font-size: 25px;
+      width: 500px;
+      height: 950px;
+      background-color: transparent;
+      border: solid gray;
+      text-align: center;
+      border-radius: 20px;
+
+    }
+    .matière ul{
+      
+      list-style-type: none;
+      padding-left: 10px;
+      background-color: white;
+      color: black;
+      font-family: Arial, Helvetica, sans-serif;
+      font-style: oblique;
+      cursor: pointer;
+    }
+    .matière ul li{
+      padding-left: 20px;
+      background-image: url(star.jpg);
+      background-position: top left;
+      background-size: 50px 50px;
+      background-repeat: no-repeat;
+      height: 62px;
+      margin: 0px;
+      padding: 0;
+    
+    }
+    .matière ul li:hover{
+      color: red;
+    }
+    .container .btn1:hover{
+      
+      opacity: 75%;
+      background: white;
+      border-width: 15px;
+      border: solid green;
+
+    }
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+      font-size: 30px;
+    }
+    .main1 p{
+      font-size: 30px;
+    }
+    
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+    <h1>LEARNING ROBOT</h1>
+     <ul>
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#">À propos</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Connexion</a></li>
+      </ul>
+    </nav>
+  
+    <hr >
+    <div class="container">
+       <img src="rob1.gif" alt="">
+       <hr>
+       <span>JE SUIS LE PLUS GRAND ROBOT D'EDUCATION</span>
+       <p>Pour avoir le maximum de savoir et de connaissance afin de donner de sens à votre existence, LEARNING ROBOT sera la meilleur solution.Avec nous l'acquisition de la connaissance est en illimité </p>
+       <button class="btn1">S'abonner</button>
+        <button class="btn2"  onclick="loca()">commencer avec un test gratuit</button>
+        <div class="matière">
+          <h2>Nous faisons tous le DCG tout en UN</h2>
+          <ul>
+            <li>Fondamentaux du Droit</li>
+            <li>Droit Social</li>
+            <li>Droit des Sociétés</li>
+            <li>Droit Fiscal</li>
+            <li onclick="loca()">Economie Contemporaine</li>
+            <li>Comptabilité</li>
+            <li>Comptabilité Appro</li>
+            <li>Finance Publique</li>
+            <li>Anglais</li>
+            <li>Système d'Info de Gestion</li>
+            <li>Contrôle de Gestion</li>
+            <li>Management</li>
+            <li>Communication Pro</li>
+          </ul>
+
+        </div>
+    </div>
+  </header>
+    <footer>
+      <p>LEARNING ROBOT - Tous droits réservés &copy; 2023</p>
+    </footer>
+  <script>
+    function loca(){
+      document.location.href="index1.html";
+    }
+
+  </script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    
+  <!-- Le reste du contenu de votre site web -->
+</body>
+</html>

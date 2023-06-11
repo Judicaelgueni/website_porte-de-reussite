@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="script.js"></script>
+    
+    <style>
+    .box{
+        background-color: beige;
+        width: 400px;
+        height: 750px;
+        border-radius: 20px;
+        border: solid greenyellow;
+        box-shadow: 0px 5px 10px 5px;
+        text-align: center;
+        justify-content: center;
+        margin-left: 100px;
+        margin-top: 50px;
+        
+    }
+    .box .top{
+        color: green;
+        font-size: 30px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        background-color: greenyellow;
+        border-top-left-radius: 20px;
+        border-top-right-radius:20px ;
+    }
+    .box .bottom{
+        float: bottom;
+        position: fixed;
+    
+    }
+    .bottom textarea{
+        border-radius: 10px;
+        width: 300px;
+        bottom: 0;
+        border: solid greenyellow;
+    }
+    .bottom button{
+        width: 80px;
+        height: 60px;
+        background-color: greenyellow;
+        border-radius: 20px;
+    }
+    .box .middle p{
+        background-color: white;
+        height: 50px;
+        text-align: left;
+        margin-left: 20px;
+        font-size: 20px;
+        
+    }
+    .box .middle h4{
+        text-align: right;
+        margin-right: 20px;
+        color: blue;
+    }
+    .box .middle{
+        height: 630px;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="box" id="ess">
+        <div class="top">DISSCUSSION</div>
+        <div class="middle">
+            <p>hello BIG<br>comment va tu?</p>
+            <h4>je vais good et les parents?</h4>
+            <p>ils vont bien</p>
+            <h4>ah là je suis content</h4>
+            <h4>et les examens je crois que tu te prépare inh</h4>
+            <p>wesh big jo</p>
+            <h4>gorgé de vin donc</h4>
+            <h4 id="new"></h4>
+            
+        </div>
+        <div class="bottom">
+           
+            <textarea onfocus="joo()" onblur="jii()" name="" id="dee" cols="30" placeholder="enter your message" ></textarea>
+            <button  onclick="maxime()">envoyer</button>
+            
+
+        </div>
+        
+        
+    </div>
+    
+</body>
+</html>

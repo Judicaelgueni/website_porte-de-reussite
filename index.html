@@ -22,6 +22,7 @@
             margin: 0 auto;
             padding: 20px;
             border-radius: 40px;
+           
         }
         .label button{
             text-align: center;
@@ -30,40 +31,120 @@
             margin-bottom: 10px;
             padding: 10px;
         }
-         p{
+        h4{
             color: red;
+            
         }
+        img{
+            float: left;
+            animation: deo 10s linear infinite  ;
+            animation-direction:initial;
+            left: 0;
+        }
+         p{
+        
+           float: left;
+            display:none;
+        }
+        span{
+            color:red ;
+            width: 200px;
+            height: 200px;
+        }
+        @keyframes deo{
+            100%{transform: translate(100em);}
+        }
+        div.nav {
+            overflow-y:scroll;
+            list-style-type: none;
+            border: solid 1px;
+            width: 200px;
+            height: 400px; 
+            padding: 5px; 
+            background-color:orange;
+           border-top-left-radius: 20px;
+           border-bottom-left-radius: 20px;
+           top: 10px;
+           box-shadow: 0px 5px 5px 5px;
+           border-right: solid;
+            
+        }
+        .nav button{
+            width: 175px;
+            height: 50px;
+            position: relative;
+            background-color: greenyellow;
+            box-shadow: 0 1px 1px 3px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: 100px;
+            font-size: 25px;
+        
+            
+        }
+        
     </style>
 </head>
-<body>
+<body >
+    <div>
+        <button onclick="judi()" >ferme moi</button>
+        <button onclick="jano()">déplit moi</button>
+        </div>
     <ul id="demo">
-        <li>judi</li>
-        <li>jano</li>
-        <li>joachim</li>
-        <li>japhet</li>
-        <li>app</li>
-        <li>deo</li>
+        <p id="dep">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Repudiandae magnam quo ex 
+            iure perferendis perspiciatis temporibus dignissimos,<br> sequi quae inventore voluptates
+             ullam officia, tenetur
+             necessitatibus fugit cumque repellendus ipsum modi.</p>
 
     </ul>
-    <div>
-    <button onclick="judi()" >ferme moi</button>
-    <button onclick="jano()">déplit moi</button>
-    </div>
+    
    
-    <div class="box">
+    <div class="box" >
+        
       
         <label>
             <h2>Identifiant</h2>
             <input type="number" id="user">
             <h2>Password</h2>
             <input type="password" id="ok"><br>
+            <i class="fas fa-eye-slash"></i>
             
             <button onclick="log()" id="bt">login</button>
 
         </label>
-        <p id="moi"></p>
+        
+        <h4 id="moi"></h4>
         
 
     </div>
+    
+    <div class="nav">
+        <li><button id="text1" onclick="text()">La sourie<i class="fa fa-youtube-play"></i></button></li><br>
+        <li><button id="text2" onclick="text0()">jano</button></li><br>
+        <li><button>japhet</button></li><br>
+        <li><button>jonathan</button></li><br>
+        <li><button>popo</button></li><br>
+        <li><button id="text1" onclick="text()">judi</button></li><br>
+        <li><button id="text2" onclick="text0()">jano</button></li><br>
+        <li><button>japhet</button></li><br>
+        <li><button>jonathan</button></li><br>
+        <li><button>popo</button></li><br>
+        <li><button id="text1" onclick="text()">judi</button></li><br>
+        <li><button id="text2" onclick="text0()">jano</button></li><br>
+        <li><button>japhet</button></li><br>
+        <li><button>jonathan</button></li><br>
+        <li><button>popo</button></li><br>
+        
+    </div>
+    
+        <h1 id="d1">Lorem ipsum dolor sit amet consectetur adipisicing
+             elit. Veritatis ipsum error dolore placeat dolorum tempora! Perferendis repudiandae doloribus inventore itaque rem quasi tenetur vitae reprehenderit repellendus
+             vel, eum tempora dolore?</h1>
+        <h6 id="d2">jud</h6>
+
+    <button id="spead" onclick="ji()">va vite</button>
+    <img src="go.gif" id="auto">
+    <img src="mach.gif" id="self">
+
+    
 </body>
 </html>
