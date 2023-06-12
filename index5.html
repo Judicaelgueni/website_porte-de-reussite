@@ -15,6 +15,45 @@
     *{
       box-sizing: border-box;
     }
+    .row::after{
+      content: "";
+      clear: both;
+      display:block;
+    }
+    [class*="col-"] {
+      float: left;
+      width: 100%;
+    }
+    @media only screen and (min-width:480px) and (max-width:767px) {
+      .col-md-1{ width:8.3333333%}
+      .col-md-2{ width:16.6666667%}
+      .col-md-3{ width:25%}
+      .col-md-4{ width:33.3333333%}
+      .col-md-5{ width:41.6666667%}
+      .col-md-6{ width:50%}
+      .col-md-7{ width:58.3333333%}
+      .col-md-8{ width:66.6666667%}
+      .col-md-9{ width:75%}
+      .col-md-10{ width:83.3333333%}
+      .col-md-11{ width:91.6666667%}
+      .col-md-12{ width:100%}
+      
+    }
+    @media only screen and (min-width:768px){
+      .col-l-1{ width:8.3333333%}
+      .col-l-2{ width:16.6666667%}
+      .col-l-3{ width:25%}
+      .col-l-4{ width:33.3333333%}
+      .col-l-5{ width:41.6666667%}
+      .col-l-6{ width:50%}
+      .col-l-7{ width:58.3333333%}
+      .col-l-8{ width:66.6666667%}
+      .col-l-9{ width:75%}
+      .col-l-10{ width:83.3333333%}
+      .col-l-11{ width:91.6666667%}
+      .col-l-12{ width:100%}
+    }
+
     
     header {
       background-color: #333;
@@ -39,27 +78,29 @@
       
     }
     
-    nav ul {
+    .nav ul {
       list-style-type: none;
       padding: 0;
       margin: 0;
     }
     
-    nav li {
+    .nav li {
       margin-right: 10px;
       display: inline-block;
     }
     
-    nav a {
+    .nav a {
       color: #fff;
       text-decoration: none;
       padding: 10px 15px;
       font-size: 40px;
     }
-    nav a:hover{
+    .nav a:hover{
       border-left: solid white;
       border-right: solid white;
-      opacity: 75%;
+      border-radius: 20%;
+      opacity: 80%;
+
     }
     .container{
        width: 100%;
@@ -68,8 +109,8 @@
        cursor: pointer;
     }
     .container img{
-       width: 100%;
-       height: 1000px;
+       max-width: 100%;
+       height:1000px;
        opacity: 0.4;
        left: 0;
     }
@@ -189,26 +230,27 @@
 </head>
 <body>
   <header>
-    <nav>
     <h1>LEARNING ROBOT</h1>
-     <ul>
+    <div class="row">
+    <div class="col-md-3 nav">
+     <ul >
         <li><a href="#">Accueil</a></li>
         <li><a href="#">À propos</a></li>
         <li><a href="#">Blog</a></li>
         <li><a href="#">Contact</a></li>
         <li><a href="#">Connexion</a></li>
       </ul>
-    </nav>
+    </div>
   
     <hr >
-    <div class="container">
+    <div class=" col-md-3 container">
        <img src="rob3.gif" alt="">
        <hr>
        <span>JE SUIS LE PLUS GRAND ROBOT D'EDUCATION</span>
        <p>Pour avoir le maximum de savoir et de connaissance afin de donner de sens à votre existence, LEARNING ROBOT sera la meilleur solution.Avec nous l'acquisition de la connaissance est en illimité </p>
        <button class="btn1">S'abonner</button>
         <button class="btn2"  onclick="loca()">commencer avec un test gratuit</button>
-        <div class="matière">
+        <div class=" col-md-3 matière">
           <h2>Nous faisons tous le DCG tout en UN</h2>
           <ul>
             <li>Fondamentaux du Droit</li>
@@ -229,6 +271,7 @@
         </div>
     </div>
   </header>
+</div>
     <footer>
       <p>LEARNING ROBOT - Tous droits réservés &copy; 2023</p>
     </footer>
