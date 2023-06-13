@@ -21,7 +21,7 @@ function log(){
     var mot= document.getElementById("ok").value;
     var jud= 1234;
     var pass= "Guenai";
-    if(mot==pass && name==jud){(document.location.href="index6.html");
+    if(mot==pass && name==jud){(document.location.href="index5.html");
     alert(bienvenu);
 
     }else{document.getElementById("moi").innerHTML="Vos identifiants ne sont pas corrects";}
