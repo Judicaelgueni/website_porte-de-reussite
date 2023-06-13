@@ -5,23 +5,60 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
-    
-    .menu-burger {
-      background: black;
-      width: 200px;
-      margin: 5px;
-      padding: 5px;
-    }
-    
+    @media screen and (max-width:1076px) and (min-width:300px){
+      *{
+        margin: 0;
+        padding: 0;
+        width: auto;
+      }
+      body{
+        width: 100%;
+        margin:auto;
+        box-sizing: border-box;
+        border: solid;
+      }
+      header{
+        background-color:black;
+      }
+      .heading h1{
+        font-size: 30px;
+        color:blue;
+      }
+      header.nav ul{
+      
+      }
+      .nav ul li{
+        margin: 0 10px;
+        display:inline-block;
+      }
+      .nav ul li a{
+        text-decoration: none;
+        color: white;
+        margin-right: 10px;
+        font-size: 20px;
+      }
 
+    }
   </style>
 </head>
 <body>
-  <span class="menu-burger">
-    <span></span>
-    <span></span>
-    <span></span>
-  </span>
-  
+  <header>
+    <div class="heading">
+      <h1>
+      LEARNING ROBOT
+      <hr>
+    </h1>
+    </div>
+    <div class="nav">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+
+      </ul>
+    </div>
+
+  </header>
 </body>
 </html>
