@@ -12,13 +12,8 @@
       margin: 0;
       padding: 0;
     }
-    
-    @media screen and(max-width: 1499px){
-      
-         .container{
-          width: 90%;
-          background-color: red;
-         }  
+    *{
+      box-sizing: border-box;
     }
     
     header {
@@ -26,12 +21,14 @@
       color: #fff;
       padding: 20px;
       justify-content: space-between;
+      
     
     }
     nav{
       justify-content: space-between;
       display: flex;
       top: 0;
+      align-items: center;
     }
     
     h1 {
@@ -44,29 +41,28 @@
       
     }
     
-    .nav ul {
+    nav ul {
       list-style-type: none;
       padding: 0;
       margin: 0;
+      display:block;
     }
     
-    .nav li {
+    nav li {
       margin-right: 10px;
       display: inline-block;
     }
     
-    .nav a {
+    nav a {
       color: #fff;
       text-decoration: none;
       padding: 10px 15px;
       font-size: 40px;
     }
-    .nav a:hover{
+    nav a:hover{
       border-left: solid white;
       border-right: solid white;
-      border-radius: 20%;
-      opacity: 80%;
-
+      opacity: 75%;
     }
     .container{
        width: 100%;
@@ -76,7 +72,7 @@
     }
     .container img{
        width: 100%;
-       height:1000px;
+       height: 1000px;
        opacity: 0.4;
        left: 0;
     }
@@ -191,22 +187,94 @@
     .main1 p{
       font-size: 30px;
     }
+    .checkbtn{
+      font-size: 50px;
+      color:white;
+      float: right;
+      line-height: 80px;
+    }
+    
+    @media screen and (max-width:1650px){
+      footer {
+        max-width: 100%;
+        height: auto;
+      }
+      nav ul{
+        display: none;
+      }
+      h1{
+        font-size: 40px;
+      }
+
+      .container .matière{
+        width: 300px;
+        font-size: 20px;
+        left: 68%;
+      }
+      .container .btn2{
+     position: absolute;
+      top: 75%;
+      left: 20%;
+      font-size: 30px;
+      width: 300px;
+      height: 80px;
+     }
+     .container .btn1{
+      position: absolute;
+      top: 65%;
+      left: 20%;
+      font-size: 30px;
+      width: 300px;
+      height: 80px;
+     }
+     header .container p{
+      position: absolute;
+       top: 46%;
+       left: 35%;
+       font-size: 30px;
+       font-weight: 300;
+    }
+    .container{
+      max-width: 100%;
+      height: auto;
+      margin: 0 auto;
+      position: relative;
+      cursor: pointer;
+   }
+   header .container span{
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    font-size: 40px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    
+ }
+ *{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+header {
+ max-width: 100%;
+ height: auto;
+}
+    }
     
   </style>
 </head>
 <body>
   <header>
+    <nav>
     <h1>LEARNING ROBOT</h1>
-    <div class="row">
-    <div class="nav">
-     <ul >
+     <ul>
         <li><a href="#">Accueil</a></li>
         <li><a href="#">À propos</a></li>
         <li><a href="#">Blog</a></li>
         <li><a href="#">Contact</a></li>
         <li><a href="#">Connexion</a></li>
       </ul>
-    </div>
+    </nav>
   
     <hr >
     <div class="container">
@@ -216,7 +284,7 @@
        <p>Pour avoir le maximum de savoir et de connaissance afin de donner de sens à votre existence, LEARNING ROBOT sera la meilleur solution.Avec nous l'acquisition de la connaissance est en illimité </p>
        <button class="btn1">S'abonner</button>
         <button class="btn2"  onclick="loca()">commencer avec un test gratuit</button>
-        <div class=" matière">
+        <div class="matière">
           <h2>Nous faisons tous le DCG tout en UN</h2>
           <ul>
             <li>Fondamentaux du Droit</li>
@@ -237,7 +305,6 @@
         </div>
     </div>
   </header>
-</div>
     <footer>
       <p>LEARNING ROBOT - Tous droits réservés &copy; 2023</p>
     </footer>
@@ -247,7 +314,7 @@
     }
 
   </script>
- 
+  
   <!-- Le reste du contenu de votre site web -->
 </body>
 </html>
