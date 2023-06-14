@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,25 +13,27 @@
       margin: 0;
       padding: 0;
     }
-    *{
+
+    * {
       box-sizing: border-box;
     }
-    
+
     header {
       background-color: #333;
       color: #fff;
       padding: 20px;
       justify-content: space-between;
-      
-    
+
+
     }
-    nav{
+
+    nav {
       justify-content: space-between;
       display: flex;
       top: 0;
       align-items: center;
     }
-    
+
     h1 {
       margin: 0;
       font-size: 70px;
@@ -38,72 +41,78 @@
       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
       font-style: oblique;
       cursor: pointer;
-      
+
     }
-    
+
     nav ul {
       list-style-type: none;
       padding: 0;
       margin: 0;
-      display:block;
+      display: block;
     }
-    
+
     nav li {
       margin-right: 10px;
       display: inline-block;
     }
-    
+
     nav a {
       color: #fff;
       text-decoration: none;
       padding: 10px 15px;
       font-size: 40px;
     }
-    nav a:hover{
+
+    nav a:hover {
       border-left: solid white;
       border-right: solid white;
       opacity: 75%;
     }
-    .container{
-       width: 100%;
-       margin: 0 auto;
-       position: relative;
-       cursor: pointer;
-    }
-    .container img{
-       width: 100%;
-       height: 1000px;
-       opacity: 0.4;
-       left: 0;
-    }
-    header .container span{
-       position: absolute;
-       top: 30%;
-       left: 50%;
-       transform: translate(-50%,-50%);
-       color: #fff;
-       font-size: 70px;
-       font-weight: 600;
-       letter-spacing: 2px;
-       color: orange;
-       text-align: center;
 
+    .container {
+      width: 100%;
+      margin: 0 auto;
+      position: relative;
+      cursor: pointer;
     }
-    header .container p{
+
+    .container img {
+      width: 100%;
+      height: 1000px;
+      opacity: 0.4;
+      left: 0;
+    }
+
+    header .container span {
       position: absolute;
-       top: 46%;
-       left: 50%;
-       transform: translate(-50%,-50%);
-       color: #fff;
-       font-size: 50px;
-       font-weight: 600;
-       text-align: center;
-       font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-       font-style: italic;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      font-size: 70px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      color: orange;
+      text-align: center;
+
+    }
+
+    header .container p {
+      position: absolute;
+      top: 46%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      font-size: 50px;
+      font-weight: 600;
+      text-align: center;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-style: italic;
 
 
     }
-    .container .btn1{
+
+    .container .btn1 {
       position: absolute;
       top: 65%;
       left: 35%;
@@ -115,9 +124,10 @@
       border-radius: 10px;
       box-shadow: 0 5px 5px 1px black;
       border: solid 5px;
-      
+
     }
-    .container .btn2{
+
+    .container .btn2 {
       position: absolute;
       top: 65%;
       left: 50%;
@@ -128,11 +138,12 @@
       height: 150px;
       border-radius: 10px;
       box-shadow: 0 5px 5px 1px black;
-      border:solid greenyellow 5px;
-      
+      border: solid greenyellow 5px;
+
     }
-    .container .matière{
-        position: absolute;
+
+    .container .matière {
+      position: absolute;
       top: 3%;
       left: 80%;
       color: white;
@@ -145,8 +156,9 @@
       border-radius: 20px;
 
     }
-    .matière ul{
-      
+
+    .matière ul {
+
       list-style-type: none;
       padding-left: 10px;
       background-color: white;
@@ -155,7 +167,8 @@
       font-style: oblique;
       cursor: pointer;
     }
-    .matière ul li{
+
+    .matière ul li {
       padding-left: 20px;
       background-image: url(star1.jpg);
       background-position: top left;
@@ -164,19 +177,22 @@
       height: 62px;
       margin: 0px;
       padding: 0;
-    
+
     }
-    .matière ul li:hover{
+
+    .matière ul li:hover {
       color: red;
     }
-    .container .btn1:hover{
-      
+
+    .container .btn1:hover {
+
       opacity: 75%;
       background: white;
       border-width: 15px;
       border: solid green;
 
     }
+
     footer {
       background-color: #333;
       color: #fff;
@@ -184,102 +200,114 @@
       text-align: center;
       font-size: 30px;
     }
-    .main1 p{
+
+    .main1 p {
       font-size: 30px;
     }
-    .checkbtn{
+
+    .checkbtn {
       font-size: 50px;
-      color:white;
+      color: white;
       float: right;
       line-height: 80px;
     }
-    
-    @media screen and (max-width:1056px){
-        .container img{
-            max-width:100%;
-            height: 1800px;
-            opacity: 0.4;
-            left: 0; 
-        }
+
+    @media screen and (max-width:1056px) {
+      .container img {
+        max-width: 100%;
+        height: 1800px;
+        opacity: 0.4;
+        left: 0;
+      }
+
       footer {
         max-width: 100%;
         height: auto;
         font-size: 16px;
       }
-      nav ul{
+
+      nav ul {
         display: none;
       }
-      h1{
+
+      h1 {
         font-size: 20px;
       }
 
-      .container .matière{
+      .container .matière {
         width: 300px;
         font-size: 20px;
         left: 5%;
         top: 40%;
-        height:887px;
-        
-    
-    
+        height: 887px;
+
+
+
       }
-      .container .btn2{
-     position: absolute;
-      top: 35%;
-      left: 40%;
-      font-size: 16px;
-      width: 200px;
-      height: 80px;
-     }
-     .container .btn1{
-      position: absolute;
-      top: 35%;
-      left: 5%;
-      font-size: 16px;
-      width: 100px;
-      height: 80px;
-     }
-     header .container p{
-      position: absolute;
-       top: 25%;
-       left: 40%;
-       font-size: 16px;
-       font-weight: 100;
+
+      .container .btn2 {
+        position: absolute;
+        top: 35%;
+        left: 40%;
+        font-size: 16px;
+        width: 200px;
+        height: 80px;
+      }
+
+      .container .btn1 {
+        position: absolute;
+        top: 35%;
+        left: 5%;
+        font-size: 16px;
+        width: 100px;
+        height: 80px;
+      }
+
+      header .container p {
+        position: absolute;
+        top: 25%;
+        left: 40%;
+        font-size: 16px;
+        font-weight: 100;
+      }
+
+      .container {
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+        position: relative;
+        cursor: pointer;
+      }
+
+      header .container span {
+        position: absolute;
+        top: 8%;
+        left: 45%;
+        font-size: 30px;
+        font-weight: 500;
+        letter-spacing: 2px;
+
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        max-width: 100%;
+        height: auto;
+      }
     }
-    .container{
-      max-width: 100%;
-      height: auto;
-      margin: 0 auto;
-      position: relative;
-      cursor: pointer;
-   }
-   header .container span{
-    position: absolute;
-    top: 8%;
-    left: 45%;
-    font-size: 30px;
-    font-weight: 500;
-    letter-spacing: 2px;
-    
- }
- *{
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-header {
- max-width: 100%;
- height: auto;
-}
-    }
-    
   </style>
 </head>
+
 <body>
   <header>
     <nav>
-    <h1>LEARNING ROBOT</h1>
-     <ul>
+      <h1>LEARNING ROBOT</h1>
+      <ul>
         <li><a href="#">Accueil</a></li>
         <li><a href="#">À propos</a></li>
         <li><a href="#">Blog</a></li>
@@ -287,46 +315,48 @@ header {
         <li><a href="#">Connexion</a></li>
       </ul>
     </nav>
-  
-    <hr >
-    <div class="container">
-       <img src="rob3.gif" alt="">
-       <hr>
-       <span>JE SUIS LE PLUS GRAND ROBOT D'EDUCATION</span>
-       <p>Pour avoir le maximum de savoir et de connaissance afin de donner de sens à votre existence, LEARNING ROBOT sera la meilleur solution.Avec nous l'acquisition de la connaissance est en illimité </p>
-       <button class="btn1">S'abonner</button>
-        <button class="btn2"  onclick="loca()">commencer avec un test gratuit</button>
-        <div class="matière">
-          <h2>Nous faisons tous le DCG tout en UN</h2>
-          <ul>
-            <li>Fondamentaux du Droit</li>
-            <li>Droit Social</li>
-            <li>Droit des Sociétés</li>
-            <li>Droit Fiscal</li>
-            <li onclick="loca()">Economie Contemporaine</li>
-            <li>Comptabilité</li>
-            <li>Comptabilité Appro</li>
-            <li>Finance Publique</li>
-            <li>Anglais</li>
-            <li>Système d'Info de Gestion</li>
-            <li>Contrôle de Gestion</li>
-            <li>Management</li>
-            <li>Communication Pro</li>
-          </ul>
 
-        </div>
+    <hr>
+    <div class="container">
+      <img src="rob3.gif" alt="">
+      <hr>
+      <span>JE SUIS LE PLUS GRAND ROBOT D'EDUCATION</span>
+      <p>Pour avoir le maximum de savoir et de connaissance afin de donner de sens à votre existence, LEARNING ROBOT
+        sera la meilleur solution.Avec nous l'acquisition de la connaissance est en illimité </p>
+      <button class="btn1">S'abonner</button>
+      <button class="btn2" onclick="loca()">commencer avec un test gratuit</button>
+      <div class="matière">
+        <h2>Nous faisons tous le DCG tout en UN</h2>
+        <ul>
+          <li>Fondamentaux du Droit</li>
+          <li>Droit Social</li>
+          <li>Droit des Sociétés</li>
+          <li>Droit Fiscal</li>
+          <li onclick="loca()">Economie Contemporaine</li>
+          <li>Comptabilité</li>
+          <li>Comptabilité Appro</li>
+          <li>Finance Publique</li>
+          <li>Anglais</li>
+          <li>Système d'Info de Gestion</li>
+          <li>Contrôle de Gestion</li>
+          <li>Management</li>
+          <li>Communication Pro</li>
+        </ul>
+
+      </div>
     </div>
   </header>
-    <footer>
-      <p>LEARNING ROBOT - Tous droits réservés &copy; 2023</p>
-    </footer>
+  <footer>
+    <p>LEARNING ROBOT - Tous droits réservés &copy; 2023</p>
+  </footer>
   <script>
-    function loca(){
-      document.location.href="index1.html";
+    function loca() {
+      document.location.href = "index1.html";
     }
 
   </script>
-  
+
   <!-- Le reste du contenu de votre site web -->
 </body>
+
 </html>
