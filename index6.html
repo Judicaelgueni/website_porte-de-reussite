@@ -4,7 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
   <style>
+    .heading{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .heading .fa fa-user-circle{
+      font-size: 20px;
+    }
     @media screen and (max-width:1500px) and (min-width:220px){
       *{
         margin: 0;
@@ -22,6 +31,11 @@
         background-color:black;
         width: 100%;
         position:fixed;
+      }
+      .heading{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
       }
       .heading h1{
         font-size: 30px;
@@ -90,13 +104,15 @@
   </style>
 </head>
 <body>
+ 
   <header>
     <div class="heading">
       <h1>
       LEARNING ROBOT
-      <hr>
     </h1>
+    <i class="fa fa-user-circle"></i>
     </div>
+    <hr>
     <div class="nav">
       <ul>
         <li><a href="#">Home</a></li>
