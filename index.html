@@ -53,6 +53,20 @@
             height: 65px;
             background-color: blue;
         }
+        .sub-menu{
+            align-items: center;
+            display: flex;
+            justify-content:left;
+            background-color: black;
+            width:100%;
+            
+        }
+        .sub-menu input{
+            height: 35px;
+            border-radius: 20px;
+            font-size: 20px;
+            width: 200px;
+        }
     }
     </style>
 </head>
@@ -67,6 +81,12 @@
         </span>
     </header>
     <hr>
+    <div class="sub-menu">
+    <form action="/recherche" method="get">
+        <input type="text" name="q" placeholder="Rechercher..." />
+        <i class="fa fa-search fa-2x"></i>
+      </form>
+    </div>
     
     
     
