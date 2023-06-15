@@ -71,6 +71,35 @@
             padding: 5px;
             margin: 5px;
         }
+        .hamburger{
+            height: 300px;
+            position: absolute;
+            width: 200px;
+            background-color:blue;
+            color: black;
+        }
+        .hamburger ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            margin-top: 20px;
+        }
+        .hamburger ul li a{
+            text-decoration: none;
+            color: white;
+            font-size: 25px;
+
+        }
+        .hamburger ul li a:hover{
+            background-color: white;
+            color: black;
+        }
+        .hamburger i{
+            color: white;
+            float: right;
+            padding-right: 5px;
+        }
+
     }
     </style>
 </head>
@@ -90,6 +119,18 @@
         <input type="text" name="q" placeholder="Rechercher..." />
         <i class="fa fa-search fa-2x"></i>
       </form>
+    </div>
+    <div class="hamburger">
+        <i class="fa fa-remove fa-2x"></i>
+        <ul>
+            <li><a href="/Home">Home</a></li>
+            <li><a href="/About">About</a></li>
+            <li><a href="/Contact">Contact</a></li>
+            <li><a href="/Service">Service</a></li>
+
+
+        </ul>
+
     </div>
     
     
