@@ -2,263 +2,128 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Essai</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />  
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
     <style>
         @media screen and (max-width:1057px){
-        i{
-            color: blue;
-            margin-left: 10px;
-        }
-        .logo img{
-            width: 100px;
-            height: 50px;
-            margin: auto;
-            margin-left:22%;
-           
-        }
         *{
+            box-sizing: border-box;
             margin: 0;
             padding: 0;
-            width:auto;
-            box-sizing: border-box;
-
-        }
-        
-        header{
-            align-items: center;
-            display: flex;
-            background-color: black;
-            width:100%; 
-            box-sizing: border-box;
-            justify-content: space-between;
-            height: 60px;
-            position: fixed;
-            
-           
-             
-        }
-        .log i{
-            padding-right: 10px;
             
         }
         body{
-            box-sizing: border-box;
-            background-color:gainsboro;
-            width:auto;
+            max-width: 100%;
         }
-        hr{
-            height: 65px;
-            background-color: blue;
-        }
-        .sub-menu{
-            align-items: center;
-            display: flex;
-            justify-content:left;
-            background-color: black;
-            width:100%;
-            
-        }
-        .sub-menu input{
-            height: 25px;
+        .ren{
+            max-width:100%;
+            height: 900px;
+            border: 1px solid;
+            padding: 30px;
+            background-color: gray;
             border-radius: 20px;
-            font-size: 20px;
-            width: 200px;
-            background-color: opaque;
-            border: none;
-            padding: 5px;
+            color: white;
+            max-width: 100%;
+        }
+        .ren input{
             margin: 5px;
+            width: 150px;
+            height: 25px;
+            font-size: 15px;
+            border: 1px solid red;
+            padding: 5px;
         }
-        .hamburger{
-            height: 350px;
-            position:absolute;
-            width: 200px;
-            background-color:blue;
+        .ren button{
+            width: 100px;
+            height: 35px;
+            font-size: 15px;
+            padding: 2px;
             color: black;
-            display: none;
-        }
-        .hamburger ul{
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            margin-top: 20px;
-        }
-        .hamburger ul li a{
-            text-decoration: none;
-            color: white;
-            font-size: 25px;
-            margin: 10px;
-            
-
-        }
-        .hamburger ul li a:hover{
-            background-color: white;
-            color: black;
-        }
-        .hamburger i{
-            color: white;
-            float: right;
-            padding-right: 5px;
-        }
-        .roulant{
-            margin-top: 20px;
-            background-color:white ;
-            width:100%;
-            height: auto;
-           
-        }
-        .contenu{
-            display: flex;
-            overflow-x: scroll;
-            width: auto;
-            padding-bottom: 10px;
-
-        }
-        .contenu .matière{
-            width: 200px;
-            height: 190px;
-            border: solid 1px blue;
-            margin-top: 5px;
+            background-color: greenyellow;
             border-radius: 20px;
-            box-shadow: 0px 1px 2px 1px;
-            display: inline-block;
-            margin-right: 10px;
-            margin-left:10px ;
-            border-left:solid 5px orange;
-            padding: 10px;
-            text-align: center;
-            background-color: black;
-            cursor: pointer;
+            box-shadow: 1px 6px 4px 2px;
+            border-color: blue;
+            margin-left: 10%;
         }
-        .matière h1{
-            font-size: 40px;
-            font-family: 'Courier New', Courier, monospace;
-            font-style: italic;
-            letter-spacing: 2px;
-            color: white;
-            cursor: pointer;
+        .ren label{
+            font-size: 15px;
         }
-        .matière h2{
-            font-size: 21px;
-            color: orange;
-            cursor: pointer;
+        .ren .fiche{
+            width: 200px;
+            height: 230px;
+            border: 1px solid;
+            margin-top: 10px;
+            margin-right: 50px;
+            background-color:white;
+            max-width: 100%;
+            margin-left: 0;
         }
-        .matière i{
-            color: green;
+        .fiche p{
+            font-size: 16px;
+            color: black;
+        }
+        .fiche h2{
+            color: blue;
+            font-size: 16px;
+        }
+        .ren i{
+            color: red;
+            background-color: white;
             margin-top: 10px;
         }
-        .scroll-text-container {
-            width: 100%;
-            height: 40px;
-            overflow: hidden;
-            border: 1px solid #000;
-            color: white;
-            background: blue;
-            align-items: center;
-            font-size: 20px;
-          }
-      
-          .scroll-text {
-            animation: scroll 70s linear infinite;
-            white-space: nowrap;
-          }
-      
-          @keyframes scroll {
-            0% {
-              transform: translateX(100%);
-            }
-            100% {
-              transform: translateX(-300%);
-            }
-          }
-          .scroll-text p{
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            font-style: oblique;
-          }
     }
     </style>
 </head>
 <body>
-    <header>
-        <i class="fa fa-bars fa-2x" onclick="ouv()"></i>
-        <span class="logo">
-        <img src="1 er essai.jpg" alt="">
-        </span>
-        <span class="log">
-        <i class="fa fa-user-circle fa-lg"></i>
-        </span>
-    </header>
+    <div class="ren">
+        <label for="">Nom et Prénom</label>
+    <input type="text" id="n"><br>
+    <label for="">L'Âge de l'individu</label>
+    <input type="text" id="y">
+    <button onclick="inr()">Enrégistrer</button>
+    <div class="fiche" id="fiche">
+        <h2>information complète</h2>
         <hr>
-    <div class="sub-menu">
-    <form action="/recherche" method="get">
-        <input type="text" name="q" placeholder="Rechercher..." />
-        <i class="fa fa-search fa-2x"></i>
-      </form>
+        <p id="premier"></p>
+        <p></p>
     </div>
-    <div class="hamburger" id="burg">
-        <i class="fa fa-remove fa-2x" onclick="fer()"></i>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Service</a></li>
-        </ul>
-        </div>
-        <div class="scroll-text-container">
-            <div class="scroll-text">
-              <p>
-              Bienvenue au portail du succès.Obtenez votre Expertise plus Rapidement
-              </p>
-            </div>
-          </div>
-        <section class="roulant">
-            <div class="contenu">
-            <div class="matière">
-                <h1>LE DCG</h1>
-                <h2>En Illimité</h2>
-                <i class="fa fa-check fa-2x"></i>
-            </div>
-            <div class="matière">
-                <h1>LE DSCG</h1>
-                <h2>En Illimité</h2>
-                <i class="fa fa-check fa-2x"></i>
-                </div>
-                <div class="matière">
-                    <h1>LE DSCG</h1>
-                    <h2>En Illimité</h2>
-                    <i class="fa fa-check fa-2x"></i>
-                    </div>
-                    <div class="matière">
-                        <h1>LE DSCG</h1>
-                        <h2>En Illimité</h2>
-                        <i class="fa fa-check fa-2x"></i>
-                        </div>
-                        <div class="matière">
-                            <h1>LE DSCG</h1>
-                            <h2>En Illimité</h2>
-                            <i class="fa fa-check fa-2x"></i>
-                            </div>
-            </div>
-        </section>
-        
-          
-        
-            
-            
-    <script>
-        function ouv(){
-            var ouv=document.getElementById("burg");
-            ouv.style.display="block";
-        }
-        function fer(){
-            var fer=document.getElementById("burg");
-            fer.style.display="none";
-        }
-    </script>
+    <i class="fa fa-download fa-2x" onclick="generateu()"></i>
     
+</div>
+<script>
+    function inr(){
+    var nom=document.getElementById("n").value;
+    var year=document.getElementById("y").value;
+    var le=document.getElementById("premier");
+    le.innerHTML="Son nom est"+" "+nom+" "+"Il a"+" "+year;
+
     
+}
+function generateu(){
+    var enquete= prompt("nom du fichier pdf:");
+    var jud=document.getElementById("fiche");
+    var opt = {
+        margin: 0.5,
+        filename:     '${enquete}.pdf',
+        image:        { type: 'jpeg', quality: 1 },
+        html2canvas:  { scale: 2 },
+        jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait' }
+      };
+      if(enquete !=null){
+        html2pdf().set(opt).from(jud).save()
+      }else{
+        alert("veuillez saisir un nom de fichier")
+      }
+
+}
+
+
+
+</script>
+
+
     
 </body>
 </html>
