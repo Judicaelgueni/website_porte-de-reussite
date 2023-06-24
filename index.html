@@ -4,129 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+
     <style>
         @media screen and (max-width:1057px){
-        *{
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            width: auto;
+            *{
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+                width: auto;
+            }
+            body{
+                max-width: 100%;
+                margin: 0;
+                padding: 0;
+                width: auto;
+                background-color: ghostwhite;
+            }
+            .heading i{
+                color: green;
+                margin: 10px;
+            }
+            .heading{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 15px;
+            }
+            .heading .menu-left{
+                margin-right:20px;
+            }
+            .heading .logo{
+                margin-left: 10px;
+                font-size:30px;
+                color: blue;
+            }
+            .je-donne{
+                background-color: white;
+                width: 85%;
+                height: 200px;
+                margin-left: 25px;
+                margin-top: 40px;
+                border-radius: 20px;
+            }
+            .je-donne .donné{
+                color: white;
+                background-color: red;
+                width: 110px;
+                height: 40px;
+                align-items: center;
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
+                border-top-left-radius: 10px;
+                font-weight: 100px;
+            }
+            .donné p{
+              margin-left: 10px;
+              margin-top: 20px;
+            }
+
         }
-        body{
-            max-width: 100%;
-            margin: 0;
-            padding: 0;
-            width: auto;
-        }
-        .ren{
-            max-width:100%;
-            height: 500px;
-            border: 1px solid;
-            padding: 30px;
-            background-color: gray;
-            border-radius: 20px;
-            color: white;
-            max-width: 100%;
-        }
-        .ren input{
-            margin: 5px;
-            width: 200px;
-            height: 25px;
-            font-size: 15px;
-            border: 1px solid red;
-            padding: 5px;
-        }
-        .ren button{
-            width: 100px;
-            height: 35px;
-            font-size: 15px;
-            padding: 2px;
-            color: black;
-            background-color: greenyellow;
-            border-radius: 20px;
-            box-shadow: 1px 6px 4px 2px;
-            border-color: blue;
-            margin-left: 10%;
-        }
-        .ren label{
-            font-size: 15px;
-        }
-        .ren .fiche{
-            width: 250px;
-            height: 260px;
-            border: 1px solid;
-            margin-top: 10px;
-            margin-right: 50px;
-            background-color:white;
-            max-width: 100%;
-            margin-left: 0;
-        }
-        .fiche p{
-            font-size: 16px;
-            color: black;
-        }
-        .fiche h2{
-            color: blue;
-            font-size: 16px;
-        }
-        .ren i{
-            color: red;
-            background-color: white;
-            margin-top: 10px;
-        }
-    }
     </style>
 </head>
 <body>
-    <div class="ren">
-        <label for="">Nom et Prénom</label>
-    <input type="text" id="n"><br>
-    <label for="">L'Âge de l'individu</label>
-    <input type="text" id="y">
-    <button onclick="inr()">Enrégistrer</button>
-    <div class="fiche" id="fiche">
-        <h2>information complète</h2>
-        <hr>
-        <p id="premier"></p>
-        <p></p>
+    <div class="heading">
+     <div class="logo">LOGO</div>
+     <div class="menu-left">
+     <i class="fa fa-moon-o fa-1x"></i>
+    <i class="fa fa-bell-o fa-1x"></i>
+    <i class="fa fa-user-circle fa-1x"></i>
     </div>
-    <i class="fa fa-download fa-2x" onclick="generateu()"></i>
+    </div>
+
+    <div class="je-donne">
+        <div class="donné"><p>JE DONNE</p></div>
+
+    </div>
     
-</div>
-<script>
-    function inr(){
-    var nom=document.getElementById("n").value;
-    var year=document.getElementById("y").value;
-    var le=document.getElementById("premier");
-    le.innerHTML="Son nom est"+" "+nom+" "+"Il a"+" "+year;
-
-    
-}
-function generateu(){
-    var enquete= prompt("nom du fichier pdf:");
-    var jud=document.getElementById("fiche");
-    var opt = {
-        margin: 0.5,
-        filename:     '${enquete}.pdf',
-        image:        { type: 'jpeg', quality: 1 },
-        html2canvas:  { scale: 2 },
-        jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait' }
-      };
-      if(enquete !=null){
-        html2pdf().set(opt).from(jud).save()
-      }else{
-        alert("veuillez saisir un nom de fichier")
-      }
-
-}
-
-
-
-</script>
-
-
     
 </body>
 </html>
