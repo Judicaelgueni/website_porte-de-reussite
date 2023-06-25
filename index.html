@@ -258,8 +258,8 @@
             <div class="choisir" onclick="choisir()" id="chs">CHOISIR <i class="fa fa-angle-down fa-2x"></i></div>
             <div class="text">Saisissez votre<br> montant</div>
             <input type="number" placeholder="0.0">
-            <div class="min">Min:</div>
-            <div class="max">Max:</div>
+            <div class="min">Min: <span id="min"></span></div>
+            <div class="max">Max: <span id="max"></span></div>
             
     </div>
     <div class="box2">
@@ -287,12 +287,15 @@
             var mtn=document.getElementById("chs");
             document.getElementById("reso").style.display = "none";
             mtn.innerHTML="<img src='mtn.jpg'style='width:60px'/>";
+            document.getElementById("min").innerHTML="2000";
+            document.getElementById("max").innerHTML="20000000";
           
         }
         function moov(){
             var moov=document.getElementById("chs");
             document.getElementById("reso").style.display = "none";
             moov.innerHTML="<img src='moov.png'style='width:50px;heigth:30px'/>";
+            document.getElementById("min").innerHTML="5000";
         }
         function celtis(){
             var celtis=document.getElementById("chs");
