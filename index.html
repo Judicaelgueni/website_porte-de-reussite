@@ -271,7 +271,7 @@
     <div class="reseau" id="reso">
         <h2 onclick="remorve()">X</h2>
         <img src="mtn.jpg" alt="" onclick="mtn()">
-        <img src="moov.png" alt="">
+        <img src="moov.png" alt="" onclick="moov()">
         <img src="celtis.jpg" alt="">
     </div>
     <script>
@@ -287,6 +287,12 @@
             mtn.innerHTML="<img src='mtn.jpg'style='width:60px'/>";
           
         }
+        function moov(){
+            var moov=document.getElementById("chs");
+            document.getElementById("reso").style.display = "none";
+            moov.innerHTML="<img src='moov.png'style='width:50px;heigth:30px'/>";
+        }
+
     </script>
     
     
