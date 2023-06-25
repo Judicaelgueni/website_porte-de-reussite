@@ -253,7 +253,7 @@
 
     <div class="box1">
         <div class="donné"><p>JE DONNE</p></div>
-            <div class="choisir" onclick="choisir()">CHOISIR <i class="fa fa-angle-down fa-2x"></i></div>
+            <div class="choisir" onclick="choisir()" id="chs">CHOISIR <i class="fa fa-angle-down fa-2x"></i></div>
             <div class="text">Saisissez votre<br> montant</div>
             <input type="number" placeholder="0.0">
             <div class="min">Min:</div>
@@ -270,7 +270,7 @@
     </div>
     <div class="reseau" id="reso">
         <h2 onclick="remorve()">X</h2>
-        <img src="mtn.jpg" alt="">
+        <img src="mtn.jpg" alt="" onclick="mtn()">
         <img src="moov.png" alt="">
         <img src="celtis.jpg" alt="">
     </div>
@@ -280,6 +280,12 @@
         }
         function remorve(){
             document.getElementById("reso").style.display = "none";
+        }
+        function mtn(){
+            var mtn=document.getElementById("chs");
+            document.getElementById("reso").style.display = "none";
+            mtn.innerHTML="<img src='mtn.jpg'style='width:60px'/>";
+          
         }
     </script>
     
