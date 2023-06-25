@@ -225,6 +225,7 @@
                 height: 50%;
                 background-color:gray;
                 top: 80px;
+                display: none;
             }
             .reseau img{
                 width: 70px;
@@ -252,7 +253,7 @@
 
     <div class="box1">
         <div class="donné"><p>JE DONNE</p></div>
-            <div class="choisir">CHOISIR <i class="fa fa-angle-down fa-2x"></i></div>
+            <div class="choisir" onclick="choisir()">CHOISIR <i class="fa fa-angle-down fa-2x"></i></div>
             <div class="text">Saisissez votre<br> montant</div>
             <input type="number" placeholder="0.0">
             <div class="min">Min:</div>
@@ -267,12 +268,20 @@
             <div class="min">Min:</div>
             <div class="max">Max:</div>
     </div>
-    <div class="reseau" onclick="">
-        <h2>X</h2>
+    <div class="reseau" id="reso">
+        <h2 onclick="remorve()">X</h2>
         <img src="mtn.jpg" alt="">
         <img src="moov.png" alt="">
         <img src="celtis.jpg" alt="">
     </div>
+    <script>
+        function choisir(){
+            document.getElementById("reso").style.display = "block";
+        }
+        function remorve(){
+            document.getElementById("reso").style.display = "none";
+        }
+    </script>
     
     
 </body>
