@@ -277,7 +277,7 @@
         <div class="donné"><p>JE DONNE</p></div>
             <div class="choisir" onclick="choisir1()" id="chs1">CHOISIR <i class="fa fa-angle-down fa-2x"></i></div>
             <div class="text">Saisissez votre<br> montant</div>
-            <input type="number" placeholder="0.0">
+            <input type="number" placeholder="0.0" id="inp1">
             <div class="min1">Min: <span id="min1"></span></div>
             <div class="max1">Max: <span id="max1"></span></div>
             
@@ -286,7 +286,7 @@
         <div class="recevoir"><p>JE REÇOIS</p></div>
         <div class="choisir" onclick="choisir2()" id="chs2">CHOISIR <i class="fa fa-angle-down fa-2x"></i></div>
             <div class="text">Saisissez votre<br> montant</div>
-            <input type="number" placeholder="0.0">
+            <input type="number" placeholder="0.0" id="inp2">
             <div class="min2">Min: <span id="min2"></span> </div>
             <div class="max2">Max: <span id="max2"></span></div>
     </div>
@@ -364,6 +364,21 @@
             document.getElementById("min2").innerHTML="10.000";
             document.getElementById("max2").innerHTML="100.000";
         }
+        let inp1= document.getElementById("inp1");
+        let inp2= document.getElementById("inp2");
+
+        inp1.addEventListener("input",function(){mtn(this.id, this.value);});
+        inp2.addEventListener("input",function(){mtn(this.id, this.value);});
+
+        function mtn(id,valeur){
+            if(id == "inp1"){
+                inp2.value = valeur*0.95;
+            }else if(id == "inp2"){
+                    inp1.value = valeur * 1000;
+                }
+
+        }
+
 
     </script>
     
