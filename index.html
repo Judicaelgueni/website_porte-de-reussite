@@ -130,7 +130,7 @@
                 border:none ;
                 outline: none;
             }
-            .box1 .min{
+            .box1 .min1{
                 position: absolute;
                 width: 73px;
                 height: 34px;
@@ -143,7 +143,7 @@
                 font-weight: 2000px;
                 color: rgb(13, 1, 24);
             }
-            .box1 .max{
+            .box1 .max1{
                 position: absolute;
                 width: 73px;
                 height: 34px;
@@ -193,7 +193,7 @@
                 border:none ;
                 outline: none;
             }
-            .box2 .min{
+            .box2 .min2{
                 position: absolute;
                 width: 73px;
                 height: 34px;
@@ -206,7 +206,7 @@
                 font-weight: 2000px;
                 color: rgb(13, 1, 24);
             }
-            .box2 .max{
+            .box2 .max2{
                 position: absolute;
                 width: 73px;
                 height: 34px;
@@ -219,7 +219,7 @@
                 font-weight: 2000px;
                 color: rgb(255, 0, 0);
             }
-            .reseau{
+            .reseau1{
                 position: absolute;
                 width: 60%;
                 height: 50%;
@@ -229,13 +229,33 @@
                 border-bottom-right-radius: 20px;
                 display: none;
             }
-            .reseau img{
+            .reseau2{
+                position: absolute;
+                width: 60%;
+                height: 50%;
+                background-color:rgb(15, 15, 122);
+                top: 80px;
+                border-top-right-radius: 20px;
+                border-bottom-right-radius: 20px;
+                display: none;
+            }
+            .reseau1 img{
                 width: 70px;
                 height: 70px;
                 margin-top: 30px;
                 margin-left: 10px;
             }
-            .reseau h2{
+            .reseau2 img{
+                width: 70px;
+                height: 70px;
+                margin-top: 30px;
+                margin-left: 10px;
+            }
+            .reseau1 h2{
+                margin-left: 85%;
+                margin-top: 10px;
+            }
+            .reseau2 h2{
                 margin-left: 85%;
                 margin-top: 10px;
             }
@@ -255,55 +275,94 @@
 
     <div class="box1">
         <div class="donné"><p>JE DONNE</p></div>
-            <div class="choisir" onclick="choisir()" id="chs">CHOISIR <i class="fa fa-angle-down fa-2x"></i></div>
+            <div class="choisir" onclick="choisir1()" id="chs1">CHOISIR <i class="fa fa-angle-down fa-2x"></i></div>
             <div class="text">Saisissez votre<br> montant</div>
             <input type="number" placeholder="0.0">
-            <div class="min">Min: <span id="min"></span></div>
-            <div class="max">Max: <span id="max"></span></div>
+            <div class="min1">Min: <span id="min1"></span></div>
+            <div class="max1">Max: <span id="max1"></span></div>
             
     </div>
     <div class="box2">
         <div class="recevoir"><p>JE REÇOIS</p></div>
-        <div class="choisir" onclick="choisir()">CHOISIR <i class="fa fa-angle-down fa-2x"></i></div>
+        <div class="choisir" onclick="choisir2()" id="chs2">CHOISIR <i class="fa fa-angle-down fa-2x"></i></div>
             <div class="text">Saisissez votre<br> montant</div>
             <input type="number" placeholder="0.0">
-            <div class="min">Min:</div>
-            <div class="max">Max:</div>
+            <div class="min2">Min: <span id="min2"></span> </div>
+            <div class="max2">Max: <span id="max2"></span></div>
     </div>
-    <div class="reseau" id="reso">
-        <h2 onclick="remorve()">X</h2>
-        <img src="mtn.jpg" alt="" onclick="mtn()">
-        <img src="moov.png" alt="" onclick="moov()">
-        <img src="celtis.jpg" alt="" onclick="celtis()">
+    <div class="reseau1" id="reso1">
+        <h2 onclick="remorve1()">X</h2>
+        <img src="mtn.jpg" alt="" onclick="mtn1()">
+        <img src="moov.png" alt="" onclick="moov1()">
+        <img src="celtis.jpg" alt="" onclick="celtis1()">
+    </div>
+    <div class="reseau2" id="reso2">
+        <h2 onclick="remorve2()">X</h2>
+        <img src="mtn.jpg" alt=""  onclick="mtn2()">
+        <img src="moov.png" alt="" onclick="moov2()" >
+        <img src="celtis.jpg" alt="" onclick="celtis2()">
     </div>
     <script>
-        function choisir(){
-            document.getElementById("reso").style.display = "block";
+        function choisir1(){
+            document.getElementById("reso1").style.display = "block";
         }
-        function remorve(){
-            document.getElementById("reso").style.display = "none";
+        
+        function remorve1(){
+            document.getElementById("reso1").style.display = "none";
         }
-        function mtn(){
-            var mtn=document.getElementById("chs");
-            document.getElementById("reso").style.display = "none";
-            mtn.innerHTML="<img src='mtn.jpg'style='width:60px'/>";
-            document.getElementById("min").innerHTML="2.000";
-            document.getElementById("max").innerHTML="20.000.000";
+        
+        function choisir2(){
+            document.getElementById("reso2").style.display = "block";
+        }
+
+        function remorve2(){
+            document.getElementById("reso2").style.display = "none";
+        }
+        function mtn1(){
+            var mtn1=document.getElementById("chs1");
+            document.getElementById("reso1").style.display = "none";
+            mtn1.innerHTML="<img src='mtn.jpg'style='width:60px'/>";
+            document.getElementById("min1").innerHTML="2.000";
+            document.getElementById("max1").innerHTML="20.000.000";
           
         }
-        function moov(){
-            var moov=document.getElementById("chs");
-            document.getElementById("reso").style.display = "none";
-            moov.innerHTML="<img src='moov.png'style='width:50px;heigth:30px'/>";
-            document.getElementById("min").innerHTML="5.000";
-            document.getElementById("max").innerHTML="2.000.000";
+        function moov1(){
+            var moov1=document.getElementById("chs1");
+            document.getElementById("reso1").style.display = "none";
+            moov1.innerHTML="<img src='moov.png'style='width:50px;heigth:30px'/>";
+            document.getElementById("min1").innerHTML="5.000";
+            document.getElementById("max1").innerHTML="2.000.000";
         }
-        function celtis(){
-            var celtis=document.getElementById("chs");
-            document.getElementById("reso").style.display = "none";
-            celtis.innerHTML="<img src='celtis.jpg'style='width:60px'/>";
-            document.getElementById("min").innerHTML="10.000";
-            document.getElementById("max").innerHTML="100.000";
+        function celtis1(){
+            var celtis1=document.getElementById("chs1");
+            document.getElementById("reso1").style.display = "none";
+            celtis1.innerHTML="<img src='celtis.jpg'style='width:60px'/>";
+            document.getElementById("min1").innerHTML="10.000";
+            document.getElementById("max1").innerHTML="100.000";
+        }
+
+
+        function mtn2(){
+            var mtn2=document.getElementById("chs2");
+            document.getElementById("reso2").style.display = "none";
+            mtn2.innerHTML="<img src='mtn.jpg'style='width:60px'/>";
+            document.getElementById("min2").innerHTML="2.000";
+            document.getElementById("max2").innerHTML="20.000.000";
+          
+        }
+        function moov2(){
+            var moov2=document.getElementById("chs2");
+            document.getElementById("reso2").style.display = "none";
+            moov2.innerHTML="<img src='moov.png'style='width:50px;heigth:30px'/>";
+            document.getElementById("min2").innerHTML="5.000";
+            document.getElementById("max2").innerHTML="2.000.000";
+        }
+        function celtis2(){
+            var celtis2=document.getElementById("chs2");
+            document.getElementById("res2").style.display = "none";
+            celtis2.innerHTML="<img src='celtis.jpg'style='width:60px'/>";
+            document.getElementById("min2").innerHTML="10.000";
+            document.getElementById("max2").innerHTML="100.000";
         }
 
     </script>
