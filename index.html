@@ -286,9 +286,56 @@
             }
             
         }
+        .charger{
+            position:fixed;
+            content: "";
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            left: 0;
+            z-index: 20;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            
+        }
+        .charger .chargeur{
+            display: block;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: white;
+            color: black;
+            border: solid;
+            border-left: solid white;
+            border-right: solid white;
+            animation: jud 1s ease-in-out infinite;
+            
+            
+        }
+        .charger h1{
+            text-align: center;
+
+            
+        }
+        @keyframes jud{
+            0%{
+            transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
     </style>
 </head>
 <body>
+<div class="charger">
+        <h1>BIENVENU</h1>
+        <span class="chargeur"></span>
+
+    </div>
     <div class="heading">
      <div class="logo">LOGO</div>
      <div class="menu-left">
@@ -413,6 +460,10 @@
         function page2(){
             document.location.href="index11.html";
         }
+        setTimeout(()=>{
+            document.querySelector('.charger').style.display="none";
+                 
+            },3570);
 
 
     </script>
